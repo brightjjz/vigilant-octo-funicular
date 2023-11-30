@@ -5,6 +5,9 @@
 		<title>小问卷</title>
 		<style type="text/css">
 			body{
+				background-image: url("https://img.zcool.cn/community/013e2057a92edb0000012e7e4e587f.jpg@2o.jpg");
+				background-repeat:no-repeat;
+				background-size:cover;
 				background-color:bisque;
 				width:640px;
 				height:1030px;
@@ -40,8 +43,20 @@
 				margin-top:16px;
 				margin-bottom: 20px;
 			}
-			
+      span1{
+          margin_left:5px;
+          color:#f20505;
+      }			
 		</style>
+		<script>
+			function dd(){
+				var button = document.getElementById("myButton");				
+				button.addEventListener("click", function() {
+				var audio = new Audio("click_sound.mp3");
+				audio.play();
+				});
+			}
+		</script>
 	</head>
 	<body>
 		<div class="index">
@@ -49,10 +64,30 @@
 			<hr color="black" width="600px"/>
 			<form method="post" action="URL">
 				<ol>
-					<li>白虎</li>
+					<li>雪虎</li>
 					<label><input type="" /></label>
+					<p>雪虎的颜色由于什么影响？</p>
+					<input type="radio" name="aaa" value="###"><span style="margin_left:5px;color:#009688">A.遗传因素</span>
+					<input type="radio" name="aaa" value="###"><span style="margin_left:5px;color:#009688">B.环境因素</span>
+					<input type="radio" name="aaa" value="###"><span style="margin_left:5px;color:#009688">C.饮食因素</span>
+					<input type="radio" name="aaa" value="###"><span style="margin_left:5px;color:#009688">D.年龄因素</span>
+					<p>雪虎的花纹是怎么样的？</p>
+					<input type="radio" name="aaa" value="###"><span style="margin_left:5px;color:#009688">A.条纹</span>
+					<input type="radio" name="aaa" value="###"><span style="margin_left:5px;color:#009688">B.斑点</span>
+					<input type="radio" name="aaa" value="###"><span style="margin_left:5px;color:#009688">C.花纹</span>
+					<input type="radio" name="aaa" value="###"><span style="margin_left:5px;color:#009688">D.网纹</span>
+					<p>雪虎喜欢吃什么？</p>
+					<input type="radio" name="aaa" value="###"><span style="margin_left:5px;color:#009688">A.鸟类</span>
+					<input type="radio" name="aaa" value="###"><span style="margin_left:5px;color:#009688">B.鱼类</span>
+					<input type="radio" name="aaa" value="###"><span style="margin_left:5px;color:#009688">C.鹿类</span>
+					<input type="radio" name="aaa" value="###"><span style="margin_left:5px;color:#009688">D.兔类</span>
+					<p>雪虎的生存状况？</p>
+					<input type="radio" name="aaa" value="###"><span style="margin_left:5px;color:#009688">A.濒危</span>
+					<input type="radio" name="aaa" value="###"><span style="margin_left:5px;color:#009688">B.稀有</span>
+					<input type="radio" name="aaa" value="###"><span style="margin_left:5px;color:#009688">C.丰富</span>
+					<input type="radio" name="aaa" value="###"><span style="margin_left:5px;color:#009688">D.普通</span>
 				</ol>
-				<button>提交</button>
+				<button id="myButton">提交</button>
 			</form>
 		</div>
 	</body>
